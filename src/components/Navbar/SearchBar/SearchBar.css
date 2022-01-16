@@ -1,0 +1,19 @@
+.search-bar {
+  position: relative;
+  right: -7vw;
+
+  height: 2.5vw;
+  width: 20vw;
+
+  border: none;
+  border-radius: 1vw;
+  padding: 0% 1%;
+
+  background-color: #eea47fff;
+  transition: cubic-bezier(0.18, 0.95, 0.68, 1.21) 0.4s;
+}
+.search-bar:focus {
+  outline: none;
+  border-radius: 2px;
+  transform: scale(1.05);
+}

@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap");
+
+.product-ind-display {
+  height: 10vw;
+  width: 100%;
+
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: center;
+
+  border-radius: 24px 24px 24px 24px;
+
+  font-family: "Nunito";
+
+  background-color: #9cc3d5ff;
+
+  margin-bottom: 3vw;
+}
+.product-ind-display:last-child {
+  margin-bottom: 0;
+}
+
+.product-image {
+  flex: 50%;
+  height: 10vw;
+  width: 50%;
+  object-fit: cover;
+
+  border-radius: 24px 0 0 24px;
+}
+
+.product-description {
+  flex: 50%;
+
+  position: relative;
+}
+
+.product-name {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.product-cost {
+  position: absolute;
+  top: 60%;
+  left: 2%;
+}
+
+.product-order-button {
+  width: 36%;
+
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  /* transform: translate(-50%, -50%); */
+
+  outline: solid 5px transparent;
+  outline-offset: -6px;
+  border: none;
+  padding: 0.5vw 3vw;
+
+  font-size: 24px;
+
+  background-color: #fabc3d;
+  clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+  transition: cubic-bezier(0.18, 0.95, 0.68, 1.21) 0.2s;
+
+  backdrop-filter: ;
+}
+.product-order-button:hover {
+  outline: solid 5px maroon;
+  outline-offset: 6px;
+  transform: scale(1.1);
+
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 99%);
+
+  cursor: pointer;
+}
+
+.product-order-icon {
+  height: 3vw;
+}

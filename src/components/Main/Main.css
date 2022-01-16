@@ -1,0 +1,12 @@
+.main-display {
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+
+  margin: 1.5vw 4vw;
+  padding: 2.5vw;
+
+  background-color: #00539cff;
+}

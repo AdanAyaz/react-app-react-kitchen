@@ -1,0 +1,10 @@
+.shopping-cart-icon {
+  position: relative;
+  height: 3vw;
+  width: 3vw;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.shopping-cart-icon:hover {
+  transform: scale(1.05);
+}

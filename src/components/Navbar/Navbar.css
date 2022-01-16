@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+.navbar {
+  height: 4vw;
+
+  padding: 1vw 3vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #00539cff;
+
+  font-family: "Mochiy Pop P One";
+}
+
+.complete-logo {
+  display: flex;
+  align-items: center;
+  font-size: 4vw;
+  color: #fabc3d;
+}
+
+.frying-pan {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 10px;
+}

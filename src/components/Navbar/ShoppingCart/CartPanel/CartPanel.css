@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+.shopping-cart-panel {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+
+  height: 100vh;
+  width: 35vw;
+
+  font-family: "Raleway";
+
+  padding: 2vw;
+  padding-top: 5vw;
+  border-left: #9cc3d5ff 5px solid;
+
+  background-color: rgba(0, 83, 156, 0.445);
+  backdrop-filter: blur(23px);
+
+  transition: ease-in-out 4s;
+
+  z-index: 10;
+}
+
+.shopping-cart-panel-close {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.shopping-cart-item {
+  display: flex;
+
+  border-radius: 7px;
+
+  box-shadow: rgba(250, 250, 250, 0.274) 0 0 10px;
+
+  background-color: #eea47fff;
+}
+
+.shopping-cart-item-details {
+  flex: 50%;
+
+  padding: 6px;
+}
+.shopping-cart-item-image {
+  flex: 50%;
+
+  border-radius: 0 7px 7px 0;
+
+  background-color: maroon;
+}
