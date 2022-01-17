@@ -52,7 +52,7 @@ function OrderPanel(props) {
       {availableFoods.map((ele, index) => {
         return (
           <div key={index} className="product-ind-display">
-            <img className="product-image" src={ele.img}></img>
+            <img className="product-image" alt="product-image-large" src={ele.img}></img>
             <div className="product-description">
               <h3 className="product-name">{ele.name}</h3>
               <h3 className="product-cost">{ele.cost}</h3>
