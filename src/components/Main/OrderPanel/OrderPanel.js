@@ -60,7 +60,7 @@ function OrderPanel(props) {
                 onClick={() => OrderHandler(ele)}
                 className="product-order-button"
               >
-                <img className="product-order-icon" src={orderCartImage}></img>
+                <img className="product-order-icon" alt="product-visuals" src={orderCartImage}></img>
               </button>
             </div>
           </div>
