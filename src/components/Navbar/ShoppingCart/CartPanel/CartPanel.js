@@ -38,14 +38,3 @@ function CartPanel(props) {
 }
 
 export default CartPanel;
-
-{
-  /* <div className="shopping-cart-item">
-        <div className="shopping-cart-item-details">
-          <h2>Test Food</h2>
-          <h3>$XX.XX</h3>
-          <h3>Quantity: 0</h3>
-        </div>
-        <div className="shopping-cart-item-image">Image Placeholder</div>
-      </div> */
-}
