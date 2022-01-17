@@ -12,6 +12,7 @@ function ShoppingCart(props) {
     <React.Fragment>
       <img
         src={shoppingCartIcon}
+        alt="shopping-cart-icon"
         onClick={panelOpenHandler}
         className="shopping-cart-icon"
       ></img>
