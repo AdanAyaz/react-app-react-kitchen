@@ -8,7 +8,7 @@ function Navbar(props) {
   return (
     <header className="navbar">
       <div className="complete-logo">
-        <img className="frying-pan" src={fryingPanSvg}></img>
+        <img className="frying-pan" alt="restaurant-logo" src={fryingPanSvg}></img>
         React Kitchen
       </div>
       <SearchBar></SearchBar>
