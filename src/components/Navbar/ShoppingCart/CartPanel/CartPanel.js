@@ -28,7 +28,7 @@ function CartPanel(props) {
               <h3>{ele.cost}</h3>
             </div>
             <div className="shopping-cart-item-image-container">
-              <img className="shopping-cart-item-image" src={ele.img}></img>
+              <img className="shopping-cart-item-image" alt="order-image" src={ele.img}></img>
             </div>
           </div>
         );
