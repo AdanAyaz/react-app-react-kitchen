@@ -17,7 +17,7 @@ function CartPanel(props) {
       onClick={panelCloseHandler}
     >
       <button className="shopping-cart-panel-close">
-        <img src={closeIcon} />
+        <img alt="close-icon" src={closeIcon} />
       </button>
       {props.onDataCoined01.map((ele) => {
         console.log(ele);
