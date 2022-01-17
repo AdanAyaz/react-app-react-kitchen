@@ -1,16 +1,12 @@
-import React, { useRef, useContext } from "react";
+import React, { useRef } from "react";
 import "./CartPanel.css";
 import closeIcon from "../../../../third-party/svg/close-icon.svg";
-import orderContext from "../../../../store/order-context-";
 
-function CartPanel() {
+function CartPanel(props) {
   const panelRef = useRef(null);
-
-  const data = useContext(orderContext);
 
   const panelCloseHandler = () => {
     panelRef.current.classList.add("hidden");
-    console.log(data);
   };
 
   return (
@@ -23,16 +19,33 @@ function CartPanel() {
       <button className="shopping-cart-panel-close">
         <img src={closeIcon} />
       </button>
-      <div className="shopping-cart-item">
+      {props.onDataCoined01.map((ele) => {
+        console.log(ele);
+        return (
+          <div className="shopping-cart-item">
+            <div className="shopping-cart-item-details">
+              <h2>{ele.name}</h2>
+              <h3>{ele.cost}</h3>
+            </div>
+            <div className="shopping-cart-item-image-container">
+              <img className="shopping-cart-item-image" src={ele.img}></img>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+export default CartPanel;
+
+{
+  /* <div className="shopping-cart-item">
         <div className="shopping-cart-item-details">
           <h2>Test Food</h2>
           <h3>$XX.XX</h3>
           <h3>Quantity: 0</h3>
         </div>
         <div className="shopping-cart-item-image">Image Placeholder</div>
-      </div>
-    </div>
-  );
+      </div> */
 }
-
-export default CartPanel;

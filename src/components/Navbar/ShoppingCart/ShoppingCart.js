@@ -4,11 +4,9 @@ import shoppingCartIcon from "../../../third-party/svg/shopping-cart.svg";
 import CartPanel from "./CartPanel/CartPanel";
 import orderContext from "../../../store/order-context-";
 
-function ShoppingCart() {
-  const cartPanel = document.getElementById("cart-panel");
-
+function ShoppingCart(props) {
   const panelOpenHandler = () => {
-    cartPanel.closest("#cart-panel").classList.remove("hidden");
+    document.getElementById("cart-panel").classList.remove("hidden");
   };
 
   return (
@@ -18,7 +16,9 @@ function ShoppingCart() {
         onClick={panelOpenHandler}
         className="shopping-cart-icon"
       ></img>
-      <CartPanel />
+      <CartPanel onDataCoined01={props.onDataCoined00}>
+        {props.children}
+      </CartPanel>
     </React.Fragment>
   );
 }

@@ -38,21 +38,29 @@ const availableFoods = [
   },
 ];
 
-function OrderPanel() {
-  const OrderHandler = () => {
-    console.log();
+function OrderPanel(props) {
+  const [orderList, setOrderList] = useState([]);
+
+  const OrderHandler = (data) => {
+    setOrderList(() => {
+      return [...orderList, data];
+    });
+    props.onOrderRecieve([...orderList, data]);
   };
 
   return (
     <React.Fragment>
-      {availableFoods.map((ele) => {
+      {availableFoods.map((ele, index) => {
         return (
-          <div className="product-ind-display">
+          <div key={index} className="product-ind-display">
             <img className="product-image" src={ele.img}></img>
             <div className="product-description">
               <h3 className="product-name">{ele.name}</h3>
               <h3 className="product-cost">{ele.cost}</h3>
-              <button onClick={OrderHandler} className="product-order-button">
+              <button
+                onClick={() => OrderHandler(ele)}
+                className="product-order-button"
+              >
                 <img className="product-order-icon" src={orderCartImage}></img>
               </button>
             </div>
