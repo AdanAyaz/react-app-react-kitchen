@@ -2,7 +2,6 @@ import React from "react";
 import "./ShoppingCart.css";
 import shoppingCartIcon from "../../../third-party/svg/shopping-cart.svg";
 import CartPanel from "./CartPanel/CartPanel";
-import orderContext from "../../../store/order-context-";
 
 function ShoppingCart(props) {
   const panelOpenHandler = () => {
