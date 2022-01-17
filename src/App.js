@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./components/Main/Main";
-import orderContext from "./store/order-context-";
 import { useState } from "react";
 
 function App() {
